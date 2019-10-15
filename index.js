@@ -9,6 +9,9 @@ class Circle {
   get diameter() {
     return this.radius * 2
   }
+ get area() {
+    return pi * ( this.radius * this.radius )
+  }
 
   set diameter( diameter ) {
     this.radius = diameter / 2
@@ -22,10 +25,7 @@ class Circle {
     this.radius = circumference / ( pi * 2 )
   }
 
-  get area() {
-    return pi * ( this.radius * this.radius )
-  }
-
+ 
   set area( area ) {
     this.radius = Math.sqrt( area / pi )
   }
